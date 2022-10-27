@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap">
+    <script src="https://kit.fontawesome.com/444fd5fc51.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/logowhite.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="personajes.html">PERSONAJES</a></li>
+                    <li><a href="rodaje.html">RODAJE</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+    </header>
+    <section class="nombre">
+        <h1>Phoebe Buffay</h1>
+        <p>Es la más distraída del grupo. También es quién tuvo la infancia más dura.<br>Su madre biológica la abandonó dejándolas a ella y a su hermana gemela, Ursula, con quien no se habla; y su madre adoptiva se suicidó cuando ellas eran adolescentes. Además, su padre biológico las abandonó y su padrastro fue a prisión, por lo que acabó viviendo en la calle.<br>Es un poco chiflada y rara y no duda en demostrarlo. Considera normales cosas que los demás ven de locos. A pesar de haber tenido que vivir en la calle robando y vagabundeando, es muy inocente y muy cariñosa con sus amigos; siempre está ahí cuando ellos la necesitan.<br>Es vegetariana y ama a todo ser viviente e, incluso, a seres no vivientes. Ejerció de madre de alquiler porque su medio hermano no podía tener hijos con su mujer, mucho mayor que él. Dio a luz a trillizos.<br>Se gana la vida como masajista, pero también disfruta de componer canciones y tocarlas acompañada de su guitarra.</p>
+
+        <div class="row">
+            <div class="escena">
+                <h3>Mejores escenas de Phoebe</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Xqmy7h2oVsU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+<!-- call to action -->
+
+    <section class="cta"> 
+        <h1>¿Querés recibir los capítulos gratis?</h1>
+        <a href="" class="boton">CONTACTANOS</a>
+    </section>
+
+<!-- footer -->
+
+
+<!-- JavaScript para barra de Menú -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+<footer>
+    <h4>Seguilos en sus redes:</h4>
+    <div class="icons">
+        <a href="https://www.instagram.com/friends/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/c/Friends" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.hbomax.com/ar/es/series/urn:hbo:series:GXdbR_gOXWJuAuwEAACVH" target="_blank"><i class="fa-solid fa-tv"></i></a>
+    </div>
+</footer>
+</html>

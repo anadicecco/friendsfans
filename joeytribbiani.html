@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap">
+    <script src="https://kit.fontawesome.com/444fd5fc51.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/logowhite.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="personajes.html">PERSONAJES</a></li>
+                    <li><a href="rodaje.html">RODAJE</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+    </header>
+    <section class="nombre">
+        <h1>Joey Tribbiani</h1>
+        <p>Joey es de origen italiano y tiene siete hermanas.<br>Es el menos inteligente del grupo y siempre tarda en entender lo que le dicen. Vive en un mundo aparte, no sabe quién fue Stalin y cree que Bélgica es un país ficticio.<br>Se gana la vida como actor, protagonizando desde anuncios hasta películas, pasando por su mayor éxito, la serie Los días de nuestra vida o Days of our Lives.<br>Es aficionado de los Knicks. Es un experto casanova, teniendo mucho éxito con las mujeres pero sus relaciones son cortas.<br>La amistad para él es algo muy importante como cuando le regala una pulsera de la amistad a Chandler o también cuando se enfadó al descubrir que Chandler le había dado un beso a su novia.<br>Al igual que Monica, adora la comida, aunque él no es tan refinado.</p>
+
+        <div class="row">
+            <div class="escena">
+                <h3>Mejores escenas de Joey</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/fFcHnlCw3nI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+<!-- call to action -->
+
+    <section class="cta"> 
+        <h1>¿Querés recibir los capítulos gratis?</h1>
+        <a href="" class="boton">CONTACTANOS</a>
+    </section>
+
+<!-- footer -->
+
+
+<!-- JavaScript para barra de Menú -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+<footer>
+    <h4>Seguilos en sus redes:</h4>
+    <div class="icons">
+        <a href="https://www.instagram.com/friends/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/c/Friends" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.hbomax.com/ar/es/series/urn:hbo:series:GXdbR_gOXWJuAuwEAACVH" target="_blank"><i class="fa-solid fa-tv"></i></a>
+    </div>
+</footer>
+</html>

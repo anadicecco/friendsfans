@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap">
+    <script src="https://kit.fontawesome.com/444fd5fc51.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/logowhite.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="personajes.html">PERSONAJES</a></li>
+                    <li><a href="rodaje.html">RODAJE</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+    </header>
+    <section class="nombre">
+        <h1>Rachel Green</h1>
+        <p>Amiga de Monica desde la infancia. Hija del doctor Leonard Green y Sandra Green (actualmente divorciados), ha pasado toda su niñez siendo consentida, por ser hija de padres ricos. Tiene dos hermanas, Jill y Amy, tan mimadas como ella.<br>En la primera temporada, decide abandonar su buena vida y dedicarse a trabajar para ganar su sueldo. Aun así, a veces le sale la niña consentida que lleva en su interior. Comienza trabajando de camarera en el Central Perk, pero poco a poco logra introducirse en el mundo de la moda, su verdadera pasión.<br>Es extremadamente patosa y torpe, y es incapaz de concentrarse en algo que no le interese. Ha tenido diferentes novios (cameos) en la pantalla, entre que los que destacan Bruce Willis. Pero su verdadero amor será Ross, con el que tendrá una hija, Emma.</p>
+
+        <div class="row">
+            <div class="escena">
+                <h3>Mejores escenas de Rachel</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/uMoEPh0Z6WI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+<!-- call to action -->
+
+    <section class="cta"> 
+        <h1>¿Querés recibir los capítulos gratis?</h1>
+        <a href="" class="boton">CONTACTANOS</a>
+    </section>
+
+<!-- footer -->
+
+
+<!-- JavaScript para barra de Menú -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+<footer>
+    <h4>Seguilos en sus redes:</h4>
+    <div class="icons">
+        <a href="https://www.instagram.com/friends/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/c/Friends" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.hbomax.com/ar/es/series/urn:hbo:series:GXdbR_gOXWJuAuwEAACVH" target="_blank"><i class="fa-solid fa-tv"></i></a>
+    </div>
+</footer>
+</html>

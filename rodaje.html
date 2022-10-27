@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends</title>
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap">
+    <script src="https://kit.fontawesome.com/444fd5fc51.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="img/logowhite.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="personajes.html">PERSONAJES</a></li>
+                    <li><a href="rodaje.html">RODAJE</a></li>
+                    <li><a href="productos.html">PRODUCTOS</a></li>
+
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+    </header>
+    
+    <section class="rodaje">
+        <h1>Dónde fue el rodaje</h1>
+
+        <div class="row">
+            <div class="rodaje-col">
+                <img src="img/exteriores.jpg" alt="">
+                <h3>Exteriores</h3>
+                <p>La mayoría de las localizaciones de exteriores que aparecen en la serie están situados en un barrio de Nueva York llamado Greenwich Village.<br>Los apartamentos de Monica y Chandler y el de Joey, se encuentran en el cruce entre las calles Grove Street y Bedford Street en el Greenwich Village.</p>
+            </div>
+            <div class="rodaje-col">
+                <img src="img/set.jpg" alt="">
+                <h3>Set</h3>
+                <p>Aunque la serie estuviese ambientada en Nueva York, durante los 10 años que estuvo en antena se grabó en los estudios de la Warner tiene en Los Ángeles, California.</p>
+            </div>
+            <div class="rodaje-col">
+                <img src="img/london.jpg" alt="">
+                <h3>Londres</h3>
+                <p>Los dos últimos episodios de la cuarta temporada (El de la boda de Ross, Parte 1 y El de la boda de Ross, Parte 2), fueron filmados en Londres en 1998.</p>
+            </div>
+
+        </div>
+    </section>
+
+<!-- contactanos -->
+
+    <section class="cta"> 
+        <h1>¿Querés recibir los capítulos gratis?</h1>
+        <a href="" class="boton">CONTACTANOS</a>
+    </section>
+
+<!-- footer -->
+
+
+<!-- JavaScript para barra de Menú -->
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+<footer>
+    <h4>Seguilos en sus redes:</h4>
+    <div class="icons">
+        <a href="https://www.instagram.com/friends/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/c/Friends" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.hbomax.com/ar/es/series/urn:hbo:series:GXdbR_gOXWJuAuwEAACVH" target="_blank"><i class="fa-solid fa-tv"></i></a>
+    </div>
+</footer>
+</html>
